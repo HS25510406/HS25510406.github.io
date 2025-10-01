@@ -1,0 +1,160 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #110d27;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #EF5F18;
+}
+
+/* Intro */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
+  padding: 50px 20px;
+  max-width: 900px; 
+  margin: 40px auto;
+}
+
+.intro-left {
+  flex: 0 0 auto; 
+  display: flex;
+  justify-content: center;
+}
+
+.intro-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-img {
+  width: 250px; 
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px; 
+  }
+  .intro-right {
+    align-items: center; 
+  }
+}
+
+
+/* Resume Button */
+.btn {
+  display: inline-block;
+  background: #1851ef;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 50px;    
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(239, 95, 24, 0.4);
+}
+
+.btn:hover {
+  background: #c94a11;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(239, 95, 24, 0.5);
+}
+
+/* Card Layout */
+.card {
+  background: #fff;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  max-width: 900px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #110d27;
+  font-weight: 500;
+}
+
+.card h4 {
+  margin-top: 20px;
+  color: #456fe0;
+  font-weight: 400;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #110d27;
+  color: #fff;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+  .intro h1 {
+    font-size: 2rem;
+  }
+}
